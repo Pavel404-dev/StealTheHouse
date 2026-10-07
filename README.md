@@ -53,10 +53,26 @@ The first playable slice is intentionally small:
 - Selene
 - TestEZ where automated tests add real value
 
+## Project docs
+
+- [MVP roadmap](docs/roadmap.md)
+- [Development workflow](docs/development-workflow.md)
+- [Feature issue template](.github/ISSUE_TEMPLATE/feature.md)
+- [Pull request template](.github/pull_request_template.md)
+- [GitHub metadata setup](scripts/setup-github-metadata.sh)
+
 ## Roadmap
 
-GitHub Issues are the source of truth for implementation. Issue titles use milestone prefixes such as `M0`, `M1`, etc. Product vision, weekly planning, budget, KPIs, risks, experiments, and release gates live in Notion.
+GitHub Issues are the source of truth for implementation. The current MVP backlog is **#1–#34**, grouped into phases `M0` through `M6`. Product vision, weekly planning, budget, KPIs, risks, experiments, and release gates live in Notion.
+
+Actual GitHub labels and milestones can be provisioned idempotently after cloning with:
+
+```bash
+bash scripts/setup-github-metadata.sh
+```
 
 ## Status
 
 **Pre-production / M0 — Project Foundation**
+
+Start with **#1 — Bootstrap Roblox + Rojo project and local toolchain**.
