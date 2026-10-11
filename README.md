@@ -43,15 +43,22 @@ The first playable slice is intentionally small:
 - **Measure before scaling:** retention and second-run rate decide whether we add content.
 - **No pay-to-win core progression:** monetization should primarily amplify identity, expression, and convenience without invalidating gameplay.
 
-## Planned toolchain
+## Local development
+
+See [local setup, commands, and Studio smoke tests](docs/local-development.md) for the complete bootstrap workflow.
+
+The project currently contains only a walkable platform, a spawn, and server/client startup scripts sharing one module. Gameplay comes in later issues.
+
+## Toolchain
 
 - Roblox Studio
 - Luau
-- Rojo
+- Rokit 1.2.0 (tool manager)
+- Rojo 7.7.1
 - Git + GitHub
-- StyLua
-- Selene
-- TestEZ where automated tests add real value
+- StyLua 2.6.0
+- Selene 0.32.0
+- Lune 0.11.0 (assertion-based shared-module tests on Linux; no Studio needed)
 
 ## Project docs
 
@@ -75,4 +82,4 @@ bash scripts/setup-github-metadata.sh
 
 **Pre-production / M0 — Project Foundation**
 
-Start with **#1 — Bootstrap Roblox + Rojo project and local toolchain**.
+**#1 — Bootstrap Roblox + Rojo project and local toolchain** is implemented for CLI validation. Rojo plugin sync, Studio Play, and two-client smoke tests must pass before it is complete.

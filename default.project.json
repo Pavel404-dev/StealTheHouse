@@ -1,0 +1,57 @@
+{
+  "name": "StealTheHouse",
+  "serveAddress": "127.0.0.1",
+  "servePort": 34872,
+  "emitLegacyScripts": true,
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Ground": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Size": [128, 1, 128],
+          "Position": [0, -0.5, 0],
+          "Color": [0.35, 0.4, 0.35],
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      },
+      "Spawn": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": true,
+          "Enabled": true,
+          "Neutral": true,
+          "Size": [12, 1, 12],
+          "Position": [0, 0.5, 0],
+          "Duration": 0,
+          "TopSurface": "Smooth",
+          "BottomSurface": "Smooth"
+        }
+      }
+    }
+  }
+}

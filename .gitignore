@@ -1,0 +1,26 @@
+# Generated Roblox places, models, and Rojo output
+/build/
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+/sourcemap.json
+
+# Local tools, dependency downloads, and generated lint definitions
+/.tools/
+/.rokit/
+/Packages/
+/DevPackages/
+/node_modules/
+/roblox.yml
+
+# Editor, OS, and temporary files
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*~
