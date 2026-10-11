@@ -6,6 +6,10 @@
 - Notion defines product direction, weekly roadmap, budget, KPIs, risks, decisions, and experiments.
 - `main` must remain playable.
 
+For installation, quality commands, Rojo build/serve, and the bootstrap Studio checklist, see [Local development](local-development.md).
+
+On Linux, complete CLI checks and explicitly record pending Studio checks in a draft PR. A successful build or Lune test does not validate Roblox runtime. Use `Refs #<issue>` until required Studio checks pass; do not merge or close the issue yet.
+
 ## Branching
 
 Create one branch per issue:
